@@ -1,1 +1,1 @@
-# angular_rails_mix_up
+# Flapper News using Angular & Rails
