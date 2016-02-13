@@ -9,10 +9,12 @@ angular.module("flapperNews", [])
         { return; }
       $scope.posts.push({
         title: $scope.title,
+        link: $scope.link,
         upvotes: 0
       });
 
     $scope.title = '';
+    $scope.link = '';
 
     $scope.incrementUpVotes = function(post) {
       post.upvotes += 1;
