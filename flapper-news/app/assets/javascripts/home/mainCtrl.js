@@ -17,6 +17,6 @@ angular.module("flapperNews")
     };
 
     $scope.incrementUpVotes = function(post) {
-      post.upvotes += 1;
+      posts.upvote(post);
     };
 }]);
