@@ -28,7 +28,7 @@ angular.module("flapperNews", ["ui.router", 'templates', 'Devise'])
         templateUrl: 'auth/_login.html',
         controller: 'AuthCtrl',
         onEnter: ['$state', 'Auth', function($state, Auth) {
-          Auth.currentUser().then(function () {
+          Auth.currentUser().then(function() {
             $state.go('home');
           })
         }]
@@ -38,7 +38,7 @@ angular.module("flapperNews", ["ui.router", 'templates', 'Devise'])
         templateUrl: 'auth/_register.html',
         controller: 'AuthCtrl',
         onEnter: ['$state', 'Auth', function($state, Auth) {
-          Auth.currentUser().then(function () {
+          Auth.currentUser().then(function() {
             $state.go('home');
           })
         }]
