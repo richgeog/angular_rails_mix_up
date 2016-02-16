@@ -10,7 +10,7 @@ angular.module("flapperNews")
       }
     posts.addComment(post.id, {
       body: $scope.body,
-      author: 'user',
+      user: $scope.user,
     }).success(function(comment) {
       $scope.post.comments.push(comment);
     });
